@@ -13,10 +13,23 @@ La Burne Down Chart™ révolutionne le management agile en transformant votre b
 - **100% humain** : Quantifie l'ego blessé, pas juste les tickets
 - **Certification gratuite** : Pas besoin de formation à 3000€
 
-## 📜 Documentation
+## 🚀 Resources
 
-- [Le Manifeste Burne Down™](manifesto/index.html)
-- [Newsletter Corporate](newsletter/index.html)
+### [📜 Le Manifeste Burne Down™](https://maximevernusset.github.io/Burne-Down/manifesto/index.html)
+
+### 📜 Newsletters
+
+#### [📉 Burne Down Chart™](https://maximevernusset.github.io/Burne-Down/newsletter/1/index.html)
+
+Suivez en temps réel la courbe de motivation perçue de vos devs, exprimée en _points de burne fictifs_ (PBF™).
+
+#### [🎭 Scrum Cringe Theater™](https://maximevernusset.github.io/Burne-Down/newsletter/2/index.html)
+
+Un espace sécurisé pour rejouer et transcender vos pires moments agiles.
+
+#### [💉 Programme Agiltox®](https://maximevernusset.github.io/Burne-Down/newsletter/3/index.html)
+
+Protocole de désintoxication douce.
 
 ## 📄 Licence
 
@@ -24,7 +37,7 @@ La Burne Down Chart™ révolutionne le management agile en transformant votre b
 
 ---
 
-*"Parce que votre motivation n'est jamais assez métriquée."*  
+_"Parce que votre motivation n'est jamais assez métriquée."_
 — L'Équipe Agile Enablement Office™
 
 ![Burne Down Chart™](assets/favicon.png)
