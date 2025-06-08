@@ -12,7 +12,7 @@ function getNavigationURL(path) {
 
 document.addEventListener('DOMContentLoaded', () => {
     const companyName = getCompanyNameFromURL();
-    document.querySelectorAll('#company-name').forEach(el => {
+    document.querySelectorAll('.company-name').forEach(el => {
         el.textContent = companyName;
     });
 
