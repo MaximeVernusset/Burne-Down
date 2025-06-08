@@ -37,7 +37,6 @@ Protocole de désintoxication douce.
 
 ---
 
-_"Parce que votre motivation n'est jamais assez métriquée."_
-— L'Équipe Agile Enablement Office™
+> Parce que votre motivation n'est jamais assez métriquée.
 
 ![Burne Down Chart™](assets/favicon.png)
