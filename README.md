@@ -19,15 +19,15 @@ La Burne Down Chart™ révolutionne le management agile en transformant votre b
 
 ### 📜 Newsletters
 
-#### [📉 Burne Down Chart™](https://maximevernusset.github.io/Burne-Down/newsletter/1/index.html)
+#### [📉 Burne Down Chart™](https://maximevernusset.github.io/Burne-Down/newsletters/1/index.html)
 
 Suivez en temps réel la courbe de motivation perçue de vos devs, exprimée en _points de burne fictifs_ (PBF™).
 
-#### [🎭 Scrum Cringe Theater™](https://maximevernusset.github.io/Burne-Down/newsletter/2/index.html)
+#### [🎭 Scrum Cringe Theater™](https://maximevernusset.github.io/Burne-Down/newsletters/2/index.html)
 
 Un espace sécurisé pour rejouer et transcender vos pires moments agiles.
 
-#### [💉 Programme Agiltox®](https://maximevernusset.github.io/Burne-Down/newsletter/3/index.html)
+#### [💉 Programme Agiltox®](https://maximevernusset.github.io/Burne-Down/newsletters/3/index.html)
 
 Protocole de désintoxication douce.
 
