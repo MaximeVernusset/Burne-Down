@@ -1,44 +1,44 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #fefefe;
-    color: #333;
-    padding: 2rem;
-    line-height: 1.6;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fefefe;
+  color: #333;
+  padding: 2rem;
+  line-height: 1.6;
 }
 
 h1 {
-    color: #c0392b;
-    text-align: center;
+  color: #c0392b;
+  text-align: center;
 }
 
 h2 {
-    color: #2c3e50;
-    margin-top: 2rem;
+  color: #2c3e50;
+  margin-top: 2rem;
 }
 
 .highlight {
-    background: #f9e79f;
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
-    font-weight: bold;
+  background: #f9e79f;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-weight: bold;
 }
 
 .quote {
-    font-style: italic;
-    margin: 1rem 0;
-    border-left: 4px solid #dcdcdc;
-    padding-left: 1rem;
-    color: #555;
+  font-style: italic;
+  margin: 1rem 0;
+  border-left: 4px solid #dcdcdc;
+  padding-left: 1rem;
+  color: #555;
 }
 
 a {
-    color: #2980b9;
+  color: #2980b9;
 }
 
 .logo {
-    display: block;
-    margin: 0 auto 2rem auto;
-    max-width: 200px;
+  display: block;
+  margin: 0 auto 2rem auto;
+  max-width: 200px;
 }
 
 .newsletter-nav {
@@ -81,4 +81,57 @@ footer a {
 
 footer a:hover {
   color: #333;
+}
+
+/* Dark mode styles */
+[data-theme="dark"] {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] body {
+  background-color: #242424;
+  border-color: #333;
+  color: #aaa;
+}
+
+[data-theme="dark"] .newsletter-nav a {
+  color: #aaa;
+  border-color: #444;
+}
+
+[data-theme="dark"] .newsletter-nav a:hover {
+  background: #333;
+  color: #fff;
+}
+
+[data-theme="dark"] footer a {
+  color: #aaa;
+}
+
+[data-theme="dark"] footer a:hover {
+  color: #fff;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+[data-theme="dark"] .theme-toggle {
+  background: #333;
 }
