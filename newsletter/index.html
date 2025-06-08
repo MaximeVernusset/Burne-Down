@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Burne Down Chart™ - Newsletter Corporate</title>
+  <link rel="icon" type="image/png" href="../assets/burne-down-tm.png">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fefefe;
+      color: #333;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #c0392b;
+      text-align: center;
+    }
+    h2 {
+      color: #2c3e50;
+      margin-top: 2rem;
+    }
+    .highlight {
+      background: #f9e79f;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .quote {
+      font-style: italic;
+      margin: 1rem 0;
+      border-left: 4px solid #dcdcdc;
+      padding-left: 1rem;
+      color: #555;
+    }
+    a {
+      color: #2980b9;
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 2rem auto;
+      max-width: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="../assets/burne-down-tm.png" alt="Burne Down™ Logo" class="logo">
+
+  <h1>🔥 Boostez votre vélocité grâce à la <span class="highlight">Burne Down Chart™</span> !</h1>
+
+  <p>Bonjour équipe de rockstars (fr)agiles,</p>
+
+  <p>Chez <strong><span id="company-name">[Nom de l'entreprise]</span></strong>, nous croyons fermement qu'un <em>sprint sans métrique, c'est comme un daily sans silence gênant</em>.</p>
+
+  <p>C'est pourquoi, dès ce lundi, nous déployons notre nouvel outil de pilotage de performance humaine : <strong>LA BURNE DOWN CHART™</strong>.</p>
+
+  <h2>🧠 C'est quoi cette merveille ?</h2>
+  <p>Oubliez Jira. Oubliez les velocity charts. Avec la Burne Down Chart™, vous suivez en temps réel la <strong>courbe de motivation perçue</strong> de vos devs… exprimée en <em>points de burne fictifs</em> (PBF™).</p>
+  <p>Un indicateur de virilité projectuelle scientifiquement subjectif.</p>
+
+  <h2>📉 Comment ça marche ?</h2>
+  <ul>
+    <li>Chaque jour : logguez votre taux de burnitude sur une échelle de 1 à “plus de jus”.</li>
+    <li>Le Scrum Master trace la courbe sacrée.</li>
+    <li>Si elle descend bien : tout va bien.</li>
+    <li>Si elle stagne : vous êtes en train de <em>saboter le sprint</em>.</li>
+  </ul>
+
+  <h2>🚨 Pourquoi c'est mieux qu'un burn-down classique ?</h2>
+  <ul>
+    <li><strong>Plus humain</strong> : ça quantifie l'ego blessé, pas juste les tickets.</li>
+    <li><strong>Plus fun</strong> : "Burne molle" remplace "Ticket en cours" dans les daily.</li>
+    <li><strong>Plus engageant</strong> : une descente bien linéaire vous donne l'illusion de maîtriser le chaos.</li>
+  </ul>
+
+  <h2>🧘‍♀️ Témoignages</h2>
+  <div class="quote">“Depuis que j'utilise la Burne Down, je me sens enfin validé en tant qu'individu itératif.”<br>— Kevin, Développeur Front Emotional</div>
+  <div class="quote">“Je ne comprends toujours pas comment ça marche, mais j'adore faire semblant.”<br>— Chloé, PO auto-coachée</div>
+
+  <h2>💼 Formation obligatoire</h2>
+  <p><strong>📅 Vendredi - 13h13</strong> : Webinaire de lancement avec notre gourou Agile, Jean-Philippe Pivot.<br>
+     <strong>🎓 Thème</strong> : <em>“Aligner sa vélocité avec son chakra de productivité”</em><br>
+     <strong>🍵 Bonus</strong> : tea ceremony + synchronisation de backlog via mandala mural.</p>
+
+  <h2>🚀 Prochaines features à venir</h2>
+  <ul>
+    <li>Burne Down Realtime Sync™ dans Teams.</li>
+    <li>Extension SIRH : “Mood Tracker as a Service”.</li>
+    <li>Plugin Figma pour designer vos échecs en UX positive.</li>
+  </ul>
+
+  <h2>🏁 Conclusion</h2>
+  <p>Chez <strong><span id="company-name">[Nom de l'entreprise]</span></strong>, on ne se contente pas d'être agiles.<br>
+     <strong>On est <span class="highlight">Burne Down Driven™</span>.</strong></p>
+
+  <p>Alors... prêt·e à faire descendre la courbe ?</p>
+
+  <hr>
+  <p><strong>L'Équipe Agile Enablement Office™</strong><br>
+     <em>"Parce que votre motivation n'est jamais assez métriquée."</em></p>
+
+</body>
+
+<script>
+  function getCompanyNameFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const name = urlParams.get('company');
+    return name ? decodeURIComponent(name) : "[Nom de l'entreprise]";
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const companyName = getCompanyNameFromURL();
+    document.querySelectorAll('#company-name').forEach(el => {
+      el.textContent = companyName;
+    });
+  });
+</script>
+
+</html>
