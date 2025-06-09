@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Burnomètre™</title>
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .burnometer-controls {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .burnometer-button {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: transform 0.2s;
+        }
+
+        .burnometer-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .burnometer-button[data-level="low"] {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .burnometer-button[data-level="medium"] {
+            background: #FF9800;
+            color: white;
+        }
+
+        .burnometer-button[data-level="high"] {
+            background: #F44336;
+            color: white;
+        }
+
+        .burnometer-button.active {
+            box-shadow: 0 0 0 3px currentColor;
+        }
+
+        [data-burnitude="low"] {
+            --burnitude-color: #4CAF50;
+        }
+
+        [data-burnitude="medium"] {
+            --burnitude-color: #FF9800;
+        }
+
+        [data-burnitude="high"] {
+            --burnitude-color: #F44336;
+        }
+
+        .quote {
+            border-left: 4px solid var(--burnitude-color);
+            padding-left: 1rem;
+            margin: 1rem 0;
+        }
+
+        .symptoms li::before {
+            color: var(--burnitude-color);
+            content: "🚩";
+            margin-right: 0.5rem;
+        }
+
+        .recommendations li::before {
+            color: var(--burnitude-color);
+            content: "✨";
+            margin-right: 0.5rem;
+        }
+
+        section {
+            margin: 2rem 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        /* Dark mode styles */
+        [data-theme="dark"] {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+
+        [data-theme="dark"] h1,
+        [data-theme="dark"] h2 {
+            color: #fff;
+        }
+
+        [data-theme="dark"] .burnometer-button {
+            background-color: #333;
+        }
+
+        [data-theme="dark"] .burnometer-button[data-level="low"] {
+            background: #2d5e31;
+        }
+
+        [data-theme="dark"] .burnometer-button[data-level="medium"] {
+            background: #995c00;
+        }
+
+        [data-theme="dark"] .burnometer-button[data-level="high"] {
+            background: #982920;
+        }
+
+        [data-theme="dark"] .quote {
+            background: #2d2d2d;
+        }
+
+        /* Theme toggle button */
+        .theme-toggle {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.5rem;
+            border-radius: 50%;
+            border: none;
+            background: #eee;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+        }
+
+        [data-theme="dark"] .theme-toggle {
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🔥 Burnomètre™</h1>
+
+    <div class="burnometer-controls">
+        <button class="burnometer-button" data-level="low">😌 Légère tension</button>
+        <button class="burnometer-button" data-level="medium">😤 Ça commence à chauffer</button>
+        <button class="burnometer-button" data-level="high">🤯 Explosion imminente</button>
+    </div>
+
+    <main>
+        <section>
+            <h2>💬 Retours d'expérience</h2>
+            <div class="quotes"></div>
+        </section>
+
+        <section>
+            <h2>🚩 Symptômes observés</h2>
+            <ul class="symptoms"></ul>
+        </section>
+
+        <section>
+            <h2>🚀 Recommandations</h2>
+            <ul class="recommendations"></ul>
+        </section>
+    </main>
+
+    <script src="../common/theme.js"></script>
+    <script src="./content-config.js"></script>
+    <script src="./dynamic-content.js"></script>
+</body>
+
+</html>
