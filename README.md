@@ -17,7 +17,7 @@ La Burne Down Chart™ révolutionne le management agile en transformant votre b
 
 ### [📜 Le Manifeste Burne Down™](https://maximevernusset.github.io/Burne-Down/manifesto/)
 
-### [🔥 Burnomètre](https://maximevernusset.github.io/Burne-Down/burnometer/)
+### [🔥 Burnomètre™](https://maximevernusset.github.io/Burne-Down/burnometer/)
 
 ### 📜 Newsletters
 
