@@ -135,3 +135,79 @@ footer a:hover {
 [data-theme="dark"] .theme-toggle {
   background: #333;
 }
+
+.exit-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  animation: fadeIn 0.3s;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.modal-button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s;
+  text-decoration: none;
+}
+
+.modal-button.primary {
+  background: #4CAF50;
+  color: white;
+}
+
+.modal-button.secondary {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.modal-button:hover {
+  transform: translateY(-2px);
+}
+
+[data-theme="dark"] .modal-content {
+  background: #2d2d2d;
+  color: #fff;
+}
+
+[data-theme="dark"] .modal-button.secondary {
+  background: #404040;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
